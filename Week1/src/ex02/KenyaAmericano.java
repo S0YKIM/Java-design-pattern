@@ -1,4 +1,9 @@
 package ex02;
 
-public class KenyaAmericano {
+public class KenyaAmericano extends Coffee{
+    @Override
+    public void brewing() {
+        System.out.print("KenyaAmericano ");
+    }
 }
+
