@@ -1,12 +1,11 @@
 package ex01;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Student {
     int studentID;
     String studentName;
     ArrayList<Subject> subjectList;
-    public static final int BASIC = 0;
-    public static final int MAJOR = 1;
 
     public Student(int studentID, String studentName) {
         this.studentID = studentID;
@@ -18,7 +17,22 @@ public class Student {
         Subject subject = new Subject();
         subject.setName(name);
         subject.setScorePoint(score);
-        subject.setMajorCode(majorCode);
+        if (majorCode)
+            subject.strategy = new MajorStrategy();
+        else
+            subject.strategy = new BasicStrategy();
         subjectList.add(subject);
+    }
+
+    public void showGradeInfo() {
+        System.out.println("*****************************");
+        System.out.println("이름: " + studentName);
+        Iterator<Subject> it = subjectList.iterator();
+        Subject curr;
+        while (it.hasNext()) {
+            curr = it.next();
+            curr.showGrade();
+        }
+        System.out.println("*****************************");
     }
 }
