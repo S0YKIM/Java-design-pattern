@@ -1,17 +1,22 @@
 package ex01;
 
 public class Subject {
-    private String name; private int scorePoint; private boolean majorCode;
-    public String getName() { return name;
+    public GradeStrategy strategy;
+    private String name;
+    private int scorePoint;
+    public String getName() {
+        return name;
     }
     public void setName(String name) {
-        this.name = name; }
-    public int getScorePoint() { return scorePoint;
+        this.name = name;
+    }
+    public int getScorePoint() {
+        return scorePoint;
     }
     public void setScorePoint(int scorePoint) {
-        this.scorePoint = scorePoint; }
-    public boolean isMajorCode() { return majorCode;
+        this.scorePoint = scorePoint;
     }
-    public void setMajorCode(boolean majorCode) {
-        this.majorCode = majorCode; }
+    public void showGrade() {
+        strategy.showGrade(name, scorePoint);
+    }
 }
