@@ -12,7 +12,6 @@ public class StudentTest {
         studentKim.addSubject("영어", 100, false);
 
         studentLee.showGradeInfo();
-        System.out.println("======================================");
         studentKim.showGradeInfo();
     }
 }
