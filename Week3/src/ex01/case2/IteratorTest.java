@@ -1,8 +1,7 @@
-package ex01;
-
-import ex00.Book;
-import ex00.BookShelf;
-import ex00.Iterator;
+package ex01.case2;
+import ex01.case1.Book;
+import ex01.case1.BookShelf;
+import ex01.case1.Iterator;
 
 public class IteratorTest {
     public static void main(String[] args) {
