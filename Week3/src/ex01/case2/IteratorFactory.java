@@ -1,9 +1,8 @@
-package ex01;
+package ex01.case2;
+import ex01.case1.Aggregate;
+import ex01.case1.Iterator;
 
-import ex00.Aggregate;
-import ex00.Iterator;
-
-public class IteratorFactory extends Factory{
+public class IteratorFactory extends Factory {
     @Override
     protected Iterator createProduct(Aggregate list, int type) {
         if (type == 0)
