@@ -1,4 +1,6 @@
-package ex00;
+package ex01.case1;
+
+import ex00.Iterator;
 
 public class BookShelfReverseIterator implements Iterator {
     BookShelf bookshelf;
