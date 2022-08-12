@@ -1,7 +1,6 @@
-package ex01;
-
-import ex00.Aggregate;
-import ex00.Iterator;
+package ex01.case2;
+import ex01.case1.Aggregate;
+import ex01.case1.Iterator;
 
 public abstract class Factory {
     public final Iterator create(Aggregate list, int type) {
