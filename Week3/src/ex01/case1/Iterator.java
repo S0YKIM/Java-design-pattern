@@ -1,4 +1,4 @@
-package ex00;
+package ex01.case1;
 
 public interface Iterator {
     public abstract void    initPosition();
