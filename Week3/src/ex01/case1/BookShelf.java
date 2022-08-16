@@ -1,9 +1,5 @@
 package ex01.case1;
 
-import ex00.BookShelfIterator;
-import ex00.BookShelfReverseIterator;
-import ex00.Iterator;
-
 public class BookShelf implements Aggregate {
     private Book[] books;
     int     maxCount;
