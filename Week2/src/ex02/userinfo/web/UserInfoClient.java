@@ -15,7 +15,7 @@ public class UserInfoClient {
         kim.setUserId("12345");
         Properties prop = new Properties();
         try {
-            prop.load(new FileInputStream("/Users/gangtaesu/Desktop/42seoul-Java-OOP-design-pattern-study/week2/src/ex02/userinfo/web/db.properties"));
+            prop.load(new FileInputStream("/Users/soyeon/Desktop/Coding/Java-design-pattern/Week2/src/ex02/userinfo/web/db.properties"));
             String dbType = prop.getProperty("DBTYPE");
             if (dbType.equals("MYSQL")) {
                 dao = new UserInfoMySqlDao();
