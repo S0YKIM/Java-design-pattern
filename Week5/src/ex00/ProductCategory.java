@@ -11,6 +11,7 @@ public abstract class ProductCategory {
     }
     public abstract void addProduct(ProductCategory product);
     public abstract void removeProduct(ProductCategory product);
+    public abstract boolean removeProductRecursive(ProductCategory productCategory);
     public abstract void displayProduct();
     public abstract int getCount();
     public abstract String getName();

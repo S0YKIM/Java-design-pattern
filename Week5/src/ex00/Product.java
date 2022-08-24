@@ -34,6 +34,11 @@ public class Product extends ProductCategory{
     }
 
     @Override
+    public boolean removeProductRecursive(ProductCategory productCategory) {
+        return false;
+    }
+
+    @Override
     public void displayProduct() {
     }
 }

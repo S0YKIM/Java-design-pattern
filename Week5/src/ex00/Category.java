@@ -16,14 +16,22 @@ public class Category extends ProductCategory{
     }
 
     @Override
-    public void removeProduct(ProductCategory productCategory) {
+    public void removeProduct(ProductCategory product) {
+        if (removeProductRecursive(product) == false)
+            System.out.println("존재하지 않는 카테고리입니다.");
+    }
+
+    public boolean removeProductRecursive(ProductCategory productCategory) {
         for(ProductCategory temp : list) {
-            if(temp.getId() == productCategory.getId()) {
+            if (temp.getId() == productCategory.getId()) {
                 list.remove(temp);
-                return;
+                return true;
             }
+            else
+                if (temp.removeProductRecursive(productCategory))
+                    return true;
         }
-        System.out.println("카테고리가 없습니다.");
+        return false;
     }
 
     @Override

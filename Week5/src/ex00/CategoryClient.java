@@ -67,5 +67,12 @@ public class CategoryClient {
         System.out.println("Count: " + manCategory.getCount());
         System.out.println("Price: " + manCategory.getPrice());
         System.out.println("******************************");
+
+        System.out.println("********** Remove Product from WomenCategory Test **********");
+        womanCategory.removeProduct(bag1);
+        womanCategory.displayProduct();
+        System.out.println("Count: " + womanCategory.getCount());
+        System.out.println("Price: " + womanCategory.getPrice());
+        System.out.println("******************************");
     }
 }
