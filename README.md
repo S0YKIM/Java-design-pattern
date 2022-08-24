@@ -1,7 +1,6 @@
 # Java-design-pattern
-> Learn how to make better code with Java design pattern
 
-> 2022.07.14 ~
+> 2022.07.14 ~ 08.31
 
 
 | WEEK | PROJECT                      | LANGUAGE | TOPICS                                                                                                     |  DATE OF COMPLETION |
