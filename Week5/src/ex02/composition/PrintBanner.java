@@ -1,4 +1,4 @@
-package ex02;
+package ex02.composition;
 
 public class PrintBanner implements Print {
     private Banner banner;
