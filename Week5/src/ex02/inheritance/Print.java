@@ -1,4 +1,4 @@
-package ex02.composition;
+package ex02.inheritance;
 
 public interface Print {
     public abstract void printWeak();

@@ -1,14 +1,11 @@
-package ex02.composition;
+package ex02.inheritance;
 
-public class PrintBanner implements Print {
-    private Banner banner;
+public class PrintBanner extends Banner implements Print {
     public PrintBanner(String banner) {
-        this.banner = new Banner(banner);
+        super(banner);
     }
-    public void printWeak() {
-        banner.showWithParen();
-    }
+    public void printWeak() { showWithParen(); }
     public void printStrong() {
-        banner.showWithAster();
+        showWithAster();
     }
 }

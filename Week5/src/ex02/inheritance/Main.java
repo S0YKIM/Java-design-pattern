@@ -1,4 +1,4 @@
-package ex02.composition;
+package ex02.inheritance;
 
 public class Main {
     public static void main(String[] args) {
